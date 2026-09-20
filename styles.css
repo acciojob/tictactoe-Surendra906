@@ -1,1 +1,37 @@
 /*  your css code here. If applicable */
+body {
+	font-family:Arial,sans-serif;
+	display:flex;
+	justify-content:center;
+	margin-top:50px;
+}
+.container {
+	text-align:center;
+}
+.board {
+	display:grid;
+	grid-template-columns:repeat(3,100px);
+	grid-gap:5px;
+	margin:20px auto;
+	width:310px;
+}
+.cell {
+	width:100px;
+	height:100px;
+	background-color:#f0f0f0;
+	border:1px solid #ccc;
+	font-size:2.5rem;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	cursor:pointer;
+	text-transform:lowercase;
+}
+.cell:hover {
+	background-color:#e0e0e0;
+}
+.message {
+	font-size:1.2rem;
+	margin-bottom:15px;
+	font-weight:bold;
+}
